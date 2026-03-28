@@ -42,20 +42,49 @@
   <section class="inner-hero section-gap-lg">
     <div class="container split-grid inner-hero-grid">
       <div>
-        <div class="eyebrow">Our Doctors</div>
-        <h1>Experienced clinicians with a patient-centered, aesthetic-first mindset.</h1>
-        <p>Meet the dental team behind our preventive, cosmetic, restorative, and family care services.</p>
+        <div class="eyebrow">Make Appointment</div>
+        <h1>Request an appointment in a few simple steps.</h1>
+        <p>Use this polished front-end form for direct booking requests. It is built for static hosting and can later be connected to email, Formspree, or backend processing.</p>
       </div>
-      <div class="inner-photo rounded-photo" style="background-image:url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80');"></div>
+      <div class="booking-tips-card">
+        <h3>Before you book</h3>
+        <ul class="check-list compact">
+          <li>Choose the treatment or consultation type</li>
+          <li>Add your preferred date and time</li>
+          <li>Share any urgency or specific concerns</li>
+          <li>Bring previous dental records if available</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="section-gap">
-    <div class="container doctor-grid refined-doctors">
-      <article class="doctor-card-premium"><img src="assets/images/doctor-1.svg" alt="Dr. Aisha Mehra"><div><h3>Dr. Aisha Mehra</h3><p>Lead Cosmetic Dentist</p><span>Smile makeovers, veneers, facially balanced treatment design.</span></div></article>
-      <article class="doctor-card-premium"><img src="assets/images/doctor-2.svg" alt="Dr. Rohan Verma"><div><h3>Dr. Rohan Verma</h3><p>Restorative & Implant Dentist</p><span>Implants, crowns, bridges, long-term functional restoration.</span></div></article>
-      <article class="doctor-card-premium"><img src="assets/images/doctor-3.svg" alt="Dr. Naina Kapoor"><div><h3>Dr. Naina Kapoor</h3><p>Pediatric Dental Specialist</p><span>Calm children’s care, preventive visits, family dental education.</span></div></article>
-      <article class="doctor-card-premium"><img src="assets/images/doctor-4.svg" alt="Dr. Arjun Sethi"><div><h3>Dr. Arjun Sethi</h3><p>Orthodontic Consultant</p><span>Clear aligners, bite correction, structured orthodontic planning.</span></div></article>
+    <div class="container booking-layout">
+      <form class="form-card">
+        <div class="form-grid">
+          <label><span>Full Name</span><input type="text" placeholder="Your name"></label>
+          <label><span>Phone Number</span><input type="tel" placeholder="+91 99999 99999"></label>
+          <label><span>Email Address</span><input type="email" placeholder="you@example.com"></label>
+          <label><span>Preferred Date</span><input type="date"></label>
+          <label><span>Preferred Time</span><input type="time"></label>
+          <label><span>Service</span>
+            <select>
+              <option>General Consultation</option>
+              <option>Cosmetic Dentistry</option>
+              <option>Orthodontics</option>
+              <option>Emergency Visit</option>
+              <option>Children's Dentistry</option>
+            </select>
+          </label>
+        </div>
+        <label class="full-width"><span>Your Message</span><textarea rows="6" placeholder="Tell us about your concern or request..."></textarea></label>
+        <button type="button" class="btn btn-dark">Send Appointment Request</button>
+      </form>
+      <aside class="form-side-card">
+        <h3>Need urgent care?</h3>
+        <p>For pain, swelling, trauma, or dental emergency concerns, call the clinic directly for priority support and faster scheduling.</p>
+        <a href="contact.html" class="btn btn-light">Contact Clinic</a>
+      </aside>
     </div>
   </section>
 </main>
